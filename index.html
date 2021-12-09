@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Mostrar contrasena</title>
+</head>
+<body>
+    <!-- Contenedor del formulario -->
+    <div class="form-container">
+        <!-- Formulario -->
+        <form class="form">
+            <!-- Icono -->
+            <img src="./assets/icons/user.svg" alt="" class="form-icon">
+            <!-- Título -->
+            <h1 class="form-title">Iniciar Sesión</h1>
+            <!-- Contenedor del campo -->
+            <fieldset class="form-group">
+                <legend class="form-label">Correo</legend>
+                <input 
+                    type="email" 
+                    class="form-input"
+                    placeholder="Ej. micorreo@correo.com"
+                />
+            </fieldset>
+
+            <!-- Contenedor del campo -->
+            <fieldset class="form-group">
+                <legend class="form-label">Ingresa tu contraseña</legend>
+                <!-- input password -->
+                <input 
+                    type="password" 
+                    class="form-input"
+                    placeholder="Minímo 6 caracteres"
+                    id="input-password"
+                />
+            </fieldset>
+
+            <!-- Checkbox para mostrar contraseña -->
+            
+            <div class="show-pass">
+                <input type="checkbox" id="input-show-pass">
+                <small>Mostrar contraseña</small>
+            </div>
+            
+
+            <!-- Botón submit -->
+            <input 
+                type="submit"
+                class="form-submit"
+                value="Iniciar Sesión"
+            />
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
